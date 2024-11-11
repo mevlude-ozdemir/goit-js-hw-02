@@ -1,16 +1,14 @@
-// function checkForSpam(message) {
-//   const hasSpam = message
-//     .toLowerCase()
-//     .includes(("spam").toLowerCase()) || message
-//     .toLowerCase()
-//     .includes(("sale").toLowerCase());
+function checkForSpam(message) {
+  const hasSpam =
+    message.toLowerCase().includes("spam".toLowerCase()) ||
+    message.toLowerCase().includes("sale".toLowerCase());
 
-//   if (hasSpam) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
+  if (hasSpam) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
